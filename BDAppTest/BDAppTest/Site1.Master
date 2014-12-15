@@ -1,0 +1,115 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="BDAppTest.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="C:\Users\Mihai\Documents\DAW\bootstrap-3.3.1-dist\dist\js\bootstrap.min.js"></script>
+    <link href="C:\Users\Mihai\Documents\DAW\bootstrap-3.3.1-dist\dist\css\bootstrap" type ="text/css" rel ="stylesheet" />
+    <link href="StyleSheet1.css" type ="text/css" rel ="stylesheet" />
+    <style type="text/css">
+        #form1 {
+            width: 650px;
+            margin-right: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                &nbsp;</p>
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+<!-- Start Register Area-->
+<div id="RegisterArea">
+        <!-- Start User Name Section -->
+        <div id="UserNameSection">
+            <asp:Label ID="Label1" for="inputEmail" class="sr-only" runat="server" Text="Register"></asp:Label>
+        <p>User Name</p>
+
+        <asp:TextBox ID="userField" runat="server" Height="30px" Width="500px" OnTextChanged="userField_TextChanged"></asp:TextBox>
+
+        <asp:RequiredFieldValidator ID="TextBox1Validator" 
+        runat="server" ControlToValidate ="userField"
+        ErrorMessage="Please write something"/>
+        </div>
+        <!-- End User Name Section -->
+
+        <!-- Start Email Section -->
+        <div id="EmailSection">
+        <p>Email</p>
+
+        <asp:TextBox ID="emailField" runat="server" Height="30px" Width="500px" TextMode="Email" OnTextChanged="emailField_TextChanged"></asp:TextBox>
+
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" 
+        runat="server" ControlToValidate ="emailField"
+        ErrorMessage="Please write something"/>
+
+        <asp:RegularExpressionValidator ID="validateEmail"    
+          runat="server" ErrorMessage="Invalid email."
+          ControlToValidate="emailField" 
+          ValidationExpression="^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$" />
+        </div>
+        <!-- End Email Section -->
+
+        <!-- Start Pass Word Section -->
+        <div id="PassWordSection">
+        <p>Pass Word</p>
+
+        <asp:TextBox ID="passwordField" runat="server" Height="30px" Width="500px" TextMode="Password" OnTextChanged="passwordField_TextChanged"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" 
+        runat="server" ControlToValidate ="passwordVerificationField"
+        ErrorMessage="Please write something"/>
+        </div>
+        <!-- End Pass Word Section -->
+
+        <!-- Start Confirm Section -->
+        <div id="ConfirmationSection">
+        <p>Confirm Pass Word</p>
+        <asp:TextBox ID="passwordVerificationField" runat="server" Height="30px" Width="500px" TextMode="Password"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" 
+        runat="server" ControlToValidate ="passwordField"
+        ErrorMessage="Please write something"/>
+
+        <asp:CompareValidator
+             id="ProgrammaticID"
+             ControlToValidate="passwordField"
+             ControlToCompare="passwordVerificationField"  
+             ErrorMessage="Password miss match."   
+             runat="server" > 
+        </asp:CompareValidator>
+        </div>
+        <!-- End Confirm Section -->
+
+        <!-- Start Register Button -->
+        <!-- This is Register Button -->
+        <p runat="server">
+            <asp:Button ID="Button1" runat="server" Height="30px" OnClick="Button1_Click" Text="Register" Width="500px" />
+        </p>
+        <!-- End Register Button -->
+
+</div>
+<!-- End Register Area-->
+
+<!-- Start LogIn Area-->
+
+<!-- End LogIn Area-->
+<!-- Start Article Area-->
+        <div id="ArticleArea">
+        <p ID="articleParagraph" runat="server">&nbsp;</p>
+        <p ID="userListParagraph" runat="server">This is test paragraph&nbsp;</p>
+        </div>
+<!-- End Article Area-->
+    </form>
+    </body>
+</html>

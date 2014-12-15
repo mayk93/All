@@ -1,0 +1,10 @@
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\BDAppTest.dll.config
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\BDAppTest.dll
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\BDAppTest.pdb
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\MongoDB.Bson.dll
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\MongoDB.Driver.dll
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\MongoDB.Bson.xml
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\bin\MongoDB.Driver.xml
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\obj\Debug\BDAppTest.csprojResolveAssemblyReference.cache
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\obj\Debug\BDAppTest.dll
+c:\users\mihai\documents\visual studio 2013\Projects\BDAppTest\BDAppTest\obj\Debug\BDAppTest.pdb
