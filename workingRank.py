@@ -1,3 +1,4 @@
+""" Libs """
 import random
 
 """ Initialization """
@@ -42,31 +43,12 @@ class ranking:
             return False
 
 """ Metrics """
-def SpearmanFootRuleDistance ( sigma, tau ):
-    distance = 0
-    if len(sigma.rankedList) == len(tau.rankedList):
-        for i,j in sigma.rankedList , tau.rankedList:
-            distance = distance + abs(sigma.getRank(i) - tau.getRank(j))
-        return distance
-    else:
-        return -1
 
-def  KendallTauDistance ( sigma, tau ):
-    distance = 0
-    if len(sigma) == len(tau):
-        for i in range(0,len(sigma)-2):
-            for j in range(i+1,len(sigma)-1):
-                if sigma[i] < sigma[j] and tau[i] > tau[j]:
-                    distance = distance + 1
-        return distance
-    else:
-        return -1
 
+""" Ord """
 def ord ( sigma , x ):
-    if x in sigma:
-        return abs(len(sigma)-sigma.getRank(x))
-    else:
-        return 0
+    return abs(len(sigma.rankedList)-sigma.getRank(x))
+    
 def main ():
     sigma = ranking()
     sigma.populateRankedList()
@@ -74,7 +56,8 @@ def main ():
     tau = ranking()
     tau.populateRankedList()
     
-    SpearmanFootRuleDistance(sigma,tau)
+    print(ord(sigma,345))
+    print(ord(sigma,sigma.rankedList[3]))
     
 if __name__ == "__main__":
     main()
