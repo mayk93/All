@@ -32,8 +32,8 @@ class ranking:
     def getRank(self,x):
         for i in range (0,len(self.rankedList)-1):
             if x == self.rankedList[i]:
-                return i
-        return len(self.rankedList)
+                return i + 1
+        return len(self.rankedList) + 1
     def checkIfFullRanking (self):
         self.rankList()
         if self.orderedRankedList == UNIVERSE:
@@ -48,12 +48,28 @@ class ranking:
 def SpearmanFootRuleDistance ( sigma, tau ):
     distance = 0
     for i in UNIVERSE:
+        """ Print for debugging purposes """
+        """
+        if i in sigma.rankedList:
+            print("Found ", i," in SIGMA. It has rank " , sigma.getRank(i),".")
+        if i in tau.rankedList:
+            print("Found ", i," in TAU. It has rank ", tau.getRank(i),".")
+        if i in sigma.rankedList or i in tau.rankedList:
+            print("Current distance is ", distance ,".")
+        """
         distance = distance + abs(sigma.getRank(i) - tau.getRank(i))
+        """
+        if i in sigma.rankedList or i in tau.rankedList:
+            print("Computed abs is ", abs(sigma.getRank(i) - tau.getRank(i)) ,".")
+            print("New distance is ", distance,".")
+        """
     return distance
 
 """ Ord """
 def ord ( sigma , x ):
-    return abs(len(sigma.rankedList)-sigma.getRank(x))
+    print(len(sigma.rankedList)+1)
+    print(sigma.getRank(x))
+    return abs((len(sigma.rankedList)+1)-sigma.getRank(x))
     
 def main ():
     sigma = ranking()
@@ -61,14 +77,6 @@ def main ():
 
     tau = ranking()
     tau.populateRankedList()
-
-    #print(sigma.rankedList)
-    #print(tau.rankedList)
-    #print(SpearmanFootRuleDistance(sigma,tau))
-
-    sigma.rankedList = [3,2,1]
-    tau.rankedList = [4,2,1]
-    print(SpearmanFootRuleDistance(sigma,tau))
     
 if __name__ == "__main__":
     main()
