@@ -27,9 +27,8 @@ class ranking:
         self.rankedList = []
     def populateRankedList(self):
         self.rankedList = random.sample(range(50), 5)
-    def rankList(self):
-        self.orderedRankedList = self.rankedList
-        self.orderedRankedList.sort()
+        self.rankedList.sort()
+        self.rankedList.reverse()
     def getRank(self,x):
         for i in range (0,len(self.rankedList)-1):
             if x == self.rankedList[i]:
@@ -43,7 +42,14 @@ class ranking:
             return False
 
 """ Metrics """
-
+"""
+ F(σ,τ)= i∈U|σ(i)−τ(i)|.
+"""
+def SpearmanFootRuleDistance ( sigma, tau ):
+    distance = 0
+    for i in UNIVERSE:
+        distance = distance + abs(sigma.getRank(i) - tau.getRank(i))
+    return distance
 
 """ Ord """
 def ord ( sigma , x ):
@@ -55,9 +61,14 @@ def main ():
 
     tau = ranking()
     tau.populateRankedList()
-    
-    print(ord(sigma,345))
-    print(ord(sigma,sigma.rankedList[3]))
+
+    #print(sigma.rankedList)
+    #print(tau.rankedList)
+    #print(SpearmanFootRuleDistance(sigma,tau))
+
+    sigma.rankedList = [3,2,1]
+    tau.rankedList = [4,2,1]
+    print(SpearmanFootRuleDistance(sigma,tau))
     
 if __name__ == "__main__":
     main()
