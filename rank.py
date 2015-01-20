@@ -1,6 +1,8 @@
-Universe = [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
+import random
 
-multisetT = [  ]
+multisetT = [ random.sample(range(50), 5) , random.sample(range(30), 10) , random.sample(range(100), 7) ,
+              random.sample(range(50), 5) , random.sample(range(30), 10) , random.sample(range(100), 7)
+            ]
 
 def SpearmanFootRuleDistance ( sigma, tau ):
     distance = 0
@@ -22,9 +24,16 @@ def  KendallTauDistance ( sigma, tau ):
     else:
         return -1
 
+def ord ( sigma , x ):
+    if x in sigma:
+        return abs(len(sigma)-sigma(x))
+    else:
+        return 0
+
 def main ():
-    print( SpearmanFootRuleDistance( [1,2,3] , [1,3,2] ) )
-    print( KendallTauDistance( [1,2,3,4,7,5,6,11,8] , [1,3,2,11,6,5,8,7,4] ) )
+    print( SpearmanFootRuleDistance( multisetT[0] , multisetT[3] ) )
+    print( KendallTauDistance( multisetT[1] , multisetT[4] ) )
+    print( multisetT )
 
 if __name__ == "__main__":
     main()
