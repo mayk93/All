@@ -17,9 +17,9 @@ def generatemultisetT ( universe , numberOfSets ):
         multiset.append(currentSet)
     return multiset
 
-universeLimit = 10
+universeLimit = 5
 UNIVERSE = generateUniverse()
-multisetT = generatemultisetT(UNIVERSE , 10)
+multisetT = generatemultisetT(UNIVERSE , 5)
 
 """ Ranking class """
 class ranking:
@@ -42,28 +42,56 @@ class ranking:
             return False
 
 """ Metrics """
-"""
- F(σ,τ)= i∈U|σ(i)−τ(i)|.
-"""
 def SpearmanFootRuleDistance ( sigma, tau ):
+
+    """
+    [0, 2, 4, 3, 1]
+    [3, 4, 2, 0, 1]
+    0
+
+    De ce?
+    """
+    
     distance = 0
+
+    print(sigma.rankedList)
+    print(tau.rankedList)
+    
     for i in UNIVERSE:
         """ Print for debugging purposes """
-        """
         if i in sigma.rankedList:
             print("Found ", i," in SIGMA. It has rank " , sigma.getRank(i),".")
         if i in tau.rankedList:
             print("Found ", i," in TAU. It has rank ", tau.getRank(i),".")
         if i in sigma.rankedList or i in tau.rankedList:
             print("Current distance is ", distance ,".")
-        """
+        
         distance = distance + abs(sigma.getRank(i) - tau.getRank(i))
-        """
+        
         if i in sigma.rankedList or i in tau.rankedList:
             print("Computed abs is ", abs(sigma.getRank(i) - tau.getRank(i)) ,".")
             print("New distance is ", distance,".")
-        """
+        
     return distance
+
+    """
+    [0, 1, 2, 3, 4]
+    [3, 2, 1, 0, 4]
+    Found  2  in TAU. It has rank  6 .
+    Current distance is  0 .
+    Computed abs is  0 .
+    New distance is  0 .
+    Found  0  in SIGMA. It has rank  6 .
+    Current distance is  0 .
+    Computed abs is  0 .
+    New distance is  0 .
+    0
+
+    WTF? De ce nu apare 2 in SIGMA?
+    """
+
+def  KendallTauDistance ( sigma, tau ):
+    return 0
 
 """ Ord """
 def ord ( sigma , x ):
@@ -73,10 +101,18 @@ def ord ( sigma , x ):
     
 def main ():
     sigma = ranking()
-    sigma.populateRankedList()
+    #sigma.populateRankedList()
 
     tau = ranking()
-    tau.populateRankedList()
+    #tau.populateRankedList()
+
+    
+    sigma.rankedList = [0,3,1,4,2]
+    print(sigma.rankedList)
+    tau.rankedList = [4,2,1,3,0]
+    print(tau.rankedList)
+    print(SpearmanFootRuleDistance(sigma,tau))
+    
     
 if __name__ == "__main__":
     main()
