@@ -1,19 +1,6 @@
 import tkinter
 
-window = tkinter.Tk()
-window.title("Program de encriptie anti KGB Bulgar")
-window.geometry("600x600")
-window.wm_iconbitmap('enc0.ico')
-
-toEncriptLabel = tkinter.Label(window,text="Fisierul de encriptat")
-toEncriptEntry = tkinter.Entry(window,width=70)
-toEncriptLabel.pack()
-toEncriptEntry.pack()
-
-window.mainloop()
-
 additionalMappsings = { 'a' : '@' , 'c' : '<' , 'e' : '3' , 'i' : '|' , 'o' : '(' , 'q' : ')' , 't' : '7' , 'B' : '8' , 'G' : '6' , 'M' : '^' , 'O' : '0' , 'R' : '&' }
-pathToFile = "test.txt"
 
 def generateAlphabet ():
 
@@ -53,7 +40,7 @@ def mapper ( toMap ):
     except:
         return toMap
 
-def encode ():
+def encode ( pathToFile ):
     normalAlphabet = generateAlphabet()
     encodedAlphabet = generateEncodedAlphabet( normalAlphabet )
     for letter in encodedAlphabet.keys():
@@ -98,11 +85,57 @@ def decode ( toDecode ):
     decodeAlphabet = {v: k for k, v in encodedAlphabet.items()}
     return revert(toDecode , decodeAlphabet)
 
+def generateEncriptedFile():
+    pathToFile = toEncriptEntry.get()
+    toSave = encode(pathToFile)
+    #print(toSave)
+    text_file = open("FisierEncriptat.txt", "w+")
+    text_file.write(toSave)
+    text_file.close()
+
+def generateDecriptedFile():
+    pathToFile = toDecriptEntry.get()
+    with open(pathToFile, 'r') as content_file:
+        content = content_file.read()
+    toSave = decode(content)
+    #print(toSave)
+    text_file = open("FisierDecriptat.txt", "w+")
+    text_file.write(toSave)
+    text_file.close()    
+
+window = tkinter.Tk()
+window.title("Program de encriptie anti KGB Bulgar")
+window.geometry("600x600")
+window.wm_iconbitmap('enc0.ico')
+
+spaceLabel = tkinter.Label(window,text="")
+spaceLabel.pack()
+
+background_image = tkinter.PhotoImage(file="C:\\Users\\Mihai\\Pictures\\tata.png")
+background = tkinter.Label(window, image=background_image, bd=0)
+background.pack()
+
+toEncriptLabel = tkinter.Label(window,text="Fisierul de encriptat")
+toEncriptEntry = tkinter.Entry(window,width=70)
+encryptionButton = tkinter.Button(window,text="Encripteaza",command=generateEncriptedFile)
+toEncriptLabel.pack()
+toEncriptEntry.pack()
+encryptionButton.pack()
+
+toDecriptLabel = tkinter.Label(window,text="Fisierul de decriptat")
+toDecriptEntry = tkinter.Entry(window,width=70)
+decriptionButton = tkinter.Button(window,text="Decripteaza",command=generateDecriptedFile)
+toDecriptLabel.pack()
+toDecriptEntry.pack()
+decriptionButton.pack()
+
+window.mainloop()
+
 def main():
     encodedText = encode()
     decodedText = decode(encodedText)
-    print(encodedText)
-    print(decodedText)
+    #print(encodedText)
+    #print(decodedText)
     
 if __name__ == "__main__":
     main()
