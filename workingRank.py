@@ -69,10 +69,22 @@ def SpearmanFootRuleDistance ( sigma, tau ):
     else:
         return -1
 
-def  KendallTauDistance ( sigma, tau ):
-    distance = 0
-    return 0
+def KendallTauDistance ( sigma, tau ):
+    if sigma.checkIfFullRanking() and tau.checkIfFullRanking(): 
+        distance = 0
+        """ i and j refer to element of the ranked lists? They are not indices, are they? """
+        for i, j in zip(sigma.rankedList, tau.rankedList):
+            """ Here i and j are numbers. The comparison should be a given criterion, right? """
+            if i < j and sigma.getRank(i) < sigma.getRank(j) and tau.getRank(i) > tau.getRank(j):
+                distance = distance + 1
+        return distance
+    else:
+        return -1
+                
 
+def RankedDistance ( sigma, tau ): 
+    return 0
+    
 """ Ord """
 def ord ( sigma , x ):
     return abs((len(sigma.rankedList)+1)-sigma.getRank(x))
@@ -87,6 +99,7 @@ def main ():
     print(sigma.rankedList)
     print(tau.rankedList)
     print(SpearmanFootRuleDistance(sigma,tau))
+    print(KendallTauDistance(sigma,tau))
     
     
 if __name__ == "__main__":
