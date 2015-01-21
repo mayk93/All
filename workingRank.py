@@ -17,7 +17,7 @@ def generatemultisetT ( universe , numberOfSets ):
         multiset.append(currentSet)
     return multiset
 
-universeLimit = 5
+universeLimit = 7
 UNIVERSE = generateUniverse()
 multisetT = generatemultisetT(UNIVERSE , 5)
 
@@ -82,25 +82,68 @@ def KendallTauDistance ( sigma, tau ):
         return -1
                 
 
-def RankedDistance ( sigma, tau ): 
-    return 0
+def RankedDistance ( sigma, tau ):
+    """
+    On full rankedLists it does yield the same result as the Spearman distance, which is good.
+    However, I am still unsure it is correct.
+    """
+    distance = 0
+    """ Remove duplicates, yes? """
+    biglist = []
+    biglist[:] = unique( sigma.rankedList + tau.rankedList )
+    """ Print for debugging purposes """
+    """
+    print(sigma.rankedList)
+    print(tau.rankedList)
+    print(biglist)
+    """
+    for x in biglist:
+        distance = distance + abs(ord(sigma,x) - ord(tau,x))
+    return distance
     
 """ Ord """
 def ord ( sigma , x ):
     return abs((len(sigma.rankedList)+1)-sigma.getRank(x))
+
+""" Auxiliary methods """
+def unique( seq ):
+    seen = set()
+    for item in seq:
+        if item not in seen:
+            seen.add( item )
+            yield item
+
+""" Rank Aggregation """
+""" ∆(π,T)= ∆(π,τi) """
+
+def computeTAggregation ( t ):
+    """ I don't think I'm chosing the elements of Pi correctly """
+    return 0
+    
+
+def rankAggregation ():
+    D = []
+    k = len(multisetT)
+    j = 0 # What is j?
+    PiTAggregations = []
+    for t in range(1,len(UNIVERSE)):
+        D.append( constructD(k,j) )
+        PiTAggregations.append( computeTAggregation(t) )
     
 def main ():
     sigma = ranking()
-    sigma.populateRankedList(universeLimit)
+    sigma.populateRankedList(3)
 
     tau = ranking()
-    tau.populateRankedList(universeLimit)
+    tau.populateRankedList(5)
 
+    """
     print(sigma.rankedList)
     print(tau.rankedList)
     print(SpearmanFootRuleDistance(sigma,tau))
     print(KendallTauDistance(sigma,tau))
-    
+    """
+    print(RankedDistance(sigma,tau))
     
 if __name__ == "__main__":
     main()
