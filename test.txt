@@ -1,0 +1,5 @@
+This is a test file.>
+It's purpose is to be encoded.>
+If some "random" letters appear,>
+it is good.>
+Let's hope this works.

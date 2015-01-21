@@ -1,3 +1,17 @@
+import tkinter
+
+window = tkinter.Tk()
+window.title("Program de encriptie anti KGB Bulgar")
+window.geometry("600x600")
+window.wm_iconbitmap('enc0.ico')
+
+toEncriptLabel = tkinter.Label(window,text="Fisierul de encriptat")
+toEncriptEntry = tkinter.Entry(window,width=70)
+toEncriptLabel.pack()
+toEncriptEntry.pack()
+
+window.mainloop()
+
 additionalMappsings = { 'a' : '@' , 'c' : '<' , 'e' : '3' , 'i' : '|' , 'o' : '(' , 'q' : ')' , 't' : '7' , 'B' : '8' , 'G' : '6' , 'M' : '^' , 'O' : '0' , 'R' : '&' }
 pathToFile = "test.txt"
 
@@ -16,30 +30,6 @@ def generateAlphabet ():
     normalAlphabet = normalAlphabetSmall + normalAlphabetBig
 
     return normalAlphabet
-
-'''
-def generateEncodedAlphabet ( alphabet ):
-    offsetBig = 65
-    offsetSmall = 97
-    shift = 5
-    encodedAlphabet = {}
-    
-    for letter in range(0,26):
-        newMap = (letter + shift)%26 + offsetSmall
-        encodedAlphabet[alphabet[letter]] = chr(newMap)
-
-    for letter in range(0,26):
-        newMap = (letter + shift)%26 + offsetBig
-        encodedAlphabet[alphabet[letter+26]] = chr(newMap)
-        
-    return encodedAlphabet
-
-def mapper ( toMap , encodedAlphabet , additionalMappsings ):
-    try:
-        return additionalMappsings[encodedAlphabet[toMap]];
-    except:
-        return encodedAlphabet[toMap]
-'''
 
 def generateEncodedAlphabet ( alphabet ):
     offsetBig = 65
