@@ -1,5 +1,6 @@
 """ Libs """
 import random
+import itertools
 
 """ Initialization """
 def generateUniverse ():
@@ -19,6 +20,7 @@ def generatemultisetT ( universe , numberOfSets ):
 
 universeLimit = 7
 UNIVERSE = generateUniverse()
+universePermutations = list(itertools.permutations(UNIVERSE))
 multisetT = generatemultisetT(UNIVERSE , 15)
 
 """ Ranking class """
@@ -70,11 +72,23 @@ def KendallTauDistance ( sigma, tau ):
                 
 
 def RankedDistance ( sigma, tau ):
+
+    if isinstance(sigma,ranking):
+        print(tau.rankedList)
+    
     distance = 0
     biglist = []
-    biglist[:] = unique( sigma.rankedList + tau.rankedList )
+    if isinstance(sigma,ranking):
+        biglist[:] = unique( sigma.rankedList + tau.rankedList ) #Wtf?!
     for x in biglist:
         distance = distance + abs(ord(sigma,x) - ord(tau,x))
+    return distance
+
+def RankedDistanceMultiset ( tau , multiset ):
+    distance = 0
+    for tauI in multiset:
+        if isinstance(tau,ranking):
+            distance = distance + RankedDistance(tau,tauI)
     return distance
     
 """ Ord """
@@ -101,8 +115,56 @@ def constructD (t,k,j):
     return toReturn
         
 def computeTAggregation ( t ):
-    return 0    
+    EArray = []
+    for permutation in universePermutations:
+        E = 0
+        for i in range (0,len(list(permutation))):
+            for j in range(0,len(UNIVERSE)):
+                if j > t:
+                    E = E + constructD(t,i,j)
+                else:
+                    E = E + constructD(t,i,j)
+        EArray.append([E,list(permutation)])
+    minE = 9999
+    for element in EArray:
+        if element[0] < minE:
+            minE = element[0]
+            toReturn = element[1]
+    return toReturn
 
+def generateMultisetTRanking(multisetTparameter):
+    toReturn = []
+    for tauSet in multisetTparameter:
+        toAdd = ranking()
+        toAdd.rankedList = list(tauSet)
+        toReturn.append(toAdd)
+    return toReturn
+
+def rankAggregation ():
+    tAggregationTauIArray = []
+    minValues = []
+    for t in range(1,len(UNIVERSE)):
+        tAggregationTauI = computeTAggregation(t) # Returneaza mereu [1,2,3,4,5,6] - minimizeaza E-ul, in sensul ca e 0 in acest caz, dar nu cred ca e bine
+        tAggregationTauIArray.append(tAggregationTauI)
+
+        multisetTRanking = list(generateMultisetTRanking(multisetT))
+        tAggregationTauIRanking = ranking()
+        tAggregationTauIRanking.rankedList = tAggregationTauI
+        
+        minValues.append([RankedDistanceMultiset(tAggregationTauI,multisetTRanking),t]) # This will not work! multisetT is an array of arrays, it needs to be made into an array of rankings
+    minMin = 9999
+    minTArray = []
+    for element in minValues:
+        if element[0] <= minMin:
+            minMin = element[0]
+            minTArray.append(element[1])
+
+    finalTAggregations = []    
+    for minT in minTArray:
+        finalTAggregations.append(computeTAggregation(minT))
+
+    return finalTAggregations
+        
 def generateDMatrices ():
     D = []
     k = len(multisetT)
@@ -127,7 +189,8 @@ def main ():
     print(KendallTauDistance(sigma,tau)
     print(RankedDistance(sigma,tau))
     """
-    D = generateDMatrices()
+    print(rankAggregation())
+    #D = generateDMatrices()
     
 if __name__ == "__main__":
     main()
