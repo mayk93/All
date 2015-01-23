@@ -189,6 +189,7 @@ def main ():
     print(KendallTauDistance(sigma,tau)
     print(RankedDistance(sigma,tau))
     """
+    print(UNIVERSE)
     print(rankAggregation())
     #D = generateDMatrices()
     
