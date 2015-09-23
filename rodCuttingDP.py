@@ -26,9 +26,9 @@ def GetOptimalRevenueExponential(lengthOfRod):
         return max(possibilities)
 
 start = datetime.now()
-print("Expondential: ", str(GetOptimalRevenueExponential(10)))
+print("Expondential: " + str(GetOptimalRevenueExponential(10)))
 end = datetime.now()
-print("Exponential executed in: ", str(end-start))
+print("Exponential executed in: " + str(end-start))
 
 '''
 Top Down - Memoization
@@ -50,15 +50,23 @@ def GetOptimalRevenueTopDown(lengthOfRod):
     return GetOptimalRevenueTopDownAux(lengthOfRod,revenue)
 
 start = datetime.now()
-print("Top Down: ",str(GetOptimalRevenueTopDown(10)))
+print("Top Down: " + str(GetOptimalRevenueTopDown(10)))
 end = datetime.now()
-print("Top down executed in: ", str(end-start))
+print("Top down executed in: " + str(end-start))
 
 '''
 Bottom Up
 '''
-def GetOptimalRevenueBottomUpAux():
-    pass
 
-def GetOptimalRevenueBottomUp():
-    pass
+def GetOptimalRevenueBottomUp(lengthOfRod):
+    revenue = {length:-1 for length in range(lengthOfRod+1)}
+    revenue[0] = 0
+    for lengthToCut1 in range(1,lengthOfRod+1):
+        possibilities = [ ( pricePerLength[lengthToCut2] + revenue[lengthToCut1-lengthToCut2] ) for lengthToCut2 in range(1,lengthToCut1+1) ]
+        revenue[lengthToCut1] = max(possibilities)
+    return revenue[lengthOfRod]
+
+start = datetime.now()
+print("Bottom Up: " + str(GetOptimalRevenueBottomUp(10)))
+end = datetime.now()
+print("Bottom Up executed in: " + str(end-start))
