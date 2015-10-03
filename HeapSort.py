@@ -1,10 +1,9 @@
 import time
 import copy
 
-class Heap():
+class Heap(object):
     def __init__(self,array=[]):
         self.array = array
-        self.length = len(array)
         self.heapSize = len(array)
     def __str__(self):
         tree = self.Tree()
@@ -14,6 +13,15 @@ class Heap():
         for (index,element) in enumerate(self.array):
             tree += "Children of " + str(element) + " on position " + str(index) + " are: " + (str(self.array[Left(index)]) if Left(index) < self.heapSize else "NIL") + " and " + (str(self.array[Right(index)]) if Right(index) < self.heapSize else "NIL") + "\n"
         return tree
+    def getLength(self):
+        return len(self.array)
+    def setLength(self,value):
+        self.array = self.array[:value]
+        if len(self.array) < self.heapSize:
+            self.heapSize = len(self.array)
+    def delLength(self,value):
+        self.array = []
+    length = property(getLength,setLength,delLength,"Length proprety.")
 
 def Left(i):
     return 2*i+1
@@ -156,16 +164,67 @@ def MinHeapifyRecursiveNewHeap(H,i):
         MinHeapifyRecursiveInplace(newHeap,smallest)
     return newHeap
 
-def BuildHeap(H):
-    for (index,element) in enumerate(reversed(H.array[(H.length)/2:])):
-        index = H.length/2-index
-        MinHeapifyRecursiveInplace(H,index)
+def MinHeapifyIterativeInplace(H,i):
+    if H.length <= 0:
+        print("This heap is empty.")
+        return
+    if H.length == 1:
+        return
+    while True:
+        left = Left(i)
+        right = Right(i)
+        smallest = i
+        if left < H.heapSize and H.array[left] < H.array[i]:
+            smallest = left
+        if right < H.heapSize and H.array[right] < H.array[smallest]:
+            smallest = right
+        if i == smallest:
+            return
+        else:
+            H.array[i],H.array[smallest] = H.array[smallest],H.array[i]
+        i = smallest
 
-def GetHeap(H):
+def MinHeapifyIterativeNewHeap(H,i):
+    if H.length <= 0:
+        print("This heap is empty.")
+        return copy.deepcopy(H)
+    if H.length == 1:
+        return copy.deepcopy(H)
+    newHeap = copy.deepcopy(H)
+    while True:
+        left = Left(i)
+        right = Right(i)
+        smallest = i
+        if left < newHeap.heapSize and newHeap.array[left] < newHeap.array[i]:
+            smallest = left
+        if right < newHeap.heapSize and newHeap.array[right] < newHeap.array[smallest]:
+            smallest = right
+        if i == smallest:
+            return
+        else:
+            newHeap.array[i],newHeap.array[smallest] = newHeap.array[smallest],newHeap.array[i]
+        i = smallest
+    return newHeap
+
+def BuildHeap(H,function=MaxHeapifyRecursiveInplace):
+    for (index,element) in enumerate(reversed(H.array[(H.length)/2:])):
+        index = H.length/2-index-1
+        try:
+            print(index)
+            function(H,index)
+        except Exception as e:
+            print("Exception:")
+            print(str(e))
+
+def GetHeap(H,function=MaxHeapifyRecursiveInplace):
     newHeap = copy.deepcopy(H)
     for (index,element) in enumerate(reversed(newHeap.array[(newHeap.length)/2:])):
-        index = newHeap.length/2-index
-        MinHeapifyRecursiveInplace(newHeap,index)
+        index = newHeap.length/2-index-1
+        try:
+            function(newHeap,index)
+        except Exception as e:
+            print("Exception:")
+            print(str(e))
     return newHeap
 
 A = [16,4,10,14,7,9,3,2,8,1]
