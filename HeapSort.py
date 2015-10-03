@@ -1,4 +1,3 @@
-import time
 import copy
 
 class Heap(object):
@@ -213,3 +212,47 @@ def MinHeapifyIterativeNewHeap(H,i):
             newHeap.array[i],newHeap.array[smallest] = newHeap.array[smallest],newHeap.array[i]
         i = smallest
     return newHeap
+
+def BuildHeap(H,function=MaxHeapifyRecursiveInplace):
+     for (index,element) in enumerate(reversed(H.array[(H.length)/2:])):
+        index = H.length/2-index
+        try:
+            print(index)
+            function(H,index)
+        except Exception as e:
+            print("Exception:")
+            print(str(e))
+
+def GetHeap(H,function=MaxHeapifyRecursiveInplace):
+     newHeap = copy.deepcopy(H)
+     for (index,element) in enumerate(reversed(newHeap.array[(newHeap.length)/2:])):
+        index = newHeap.length/2-index
+        try:
+            function(newHeap,index)
+        except Exception as e:
+            print("Exception:")
+            print(str(e))
+     return newHeap
+
+def HeapSortInplace(A):
+    H = GetHeap(Heap(A))
+    for index,element in enumerate(H.array[::-1]):
+        index = H.length - index - 1
+        H.array[0],H.array[index] = H.array[index],H.array[0]
+        H.heapSize -= 1
+        MaxHeapifyRecursiveInplace(H,0)
+    for element in H.array:
+        A.pop(0)
+        A.append(element)
+
+def HeapSortNewArray(A):
+    H = GetHeap(Heap(A))
+    for index,element in enumerate(H.array[::-1]):
+        index = H.length - index - 1
+        H.array[0],H.array[index] = H.array[index],H.array[0]
+        H.heapSize -= 1
+        MaxHeapifyRecursiveInplace(H,0)
+    newArray = []
+    for element in H.array:
+        newArray.append(element)
+    return newArray
