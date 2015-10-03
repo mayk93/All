@@ -4,6 +4,7 @@ import copy
 class Heap(object):
     def __init__(self,array=[]):
         self.array = array
+        self.length = len(array)
         self.heapSize = len(array)
     def __str__(self):
         tree = self.Tree()
@@ -19,9 +20,16 @@ class Heap(object):
         self.array = self.array[:value]
         if len(self.array) < self.heapSize:
             self.heapSize = len(self.array)
-    def delLength(self,value):
+    def delLength(self):
         self.array = []
-    length = property(getLength,setLength,delLength,"Length proprety.")
+    def getHeapSize(self):
+        return self.__heapSize
+    def setHeapSize(self,value):
+        self.heapSize = value if value < len(self.array) else len(self.array)
+    def delHeapSize(self):
+        self.__heapSize = 0
+    __length = property(getLength,setLength,delLength,"Length proprety.")
+    __heapSize = property(getHeapSize,setHeapSize,delHeapSize,"Heap size proprety.")
 
 def Left(i):
     return 2*i+1
@@ -205,29 +213,3 @@ def MinHeapifyIterativeNewHeap(H,i):
             newHeap.array[i],newHeap.array[smallest] = newHeap.array[smallest],newHeap.array[i]
         i = smallest
     return newHeap
-
-def BuildHeap(H,function=MaxHeapifyRecursiveInplace):
-    for (index,element) in enumerate(reversed(H.array[(H.length)/2:])):
-        index = H.length/2-index-1
-        try:
-            print(index)
-            function(H,index)
-        except Exception as e:
-            print("Exception:")
-            print(str(e))
-
-def GetHeap(H,function=MaxHeapifyRecursiveInplace):
-    newHeap = copy.deepcopy(H)
-    for (index,element) in enumerate(reversed(newHeap.array[(newHeap.length)/2:])):
-        index = newHeap.length/2-index-1
-        try:
-            function(newHeap,index)
-        except Exception as e:
-            print("Exception:")
-            print(str(e))
-    return newHeap
-
-A = [16,4,10,14,7,9,3,2,8,1]
-B = [1,100,3,17,19,36,7,25,2]
-C = [0,100,5,1,7,4,3,8]
-H = Heap(array=C)
