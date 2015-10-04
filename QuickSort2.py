@@ -1,7 +1,6 @@
 import random
 
 def InsertionSort(A,start,end):
-    print("I")
     for (currentIndex,element) in enumerate(A[start+1:end]):
         currentIndex += start+1
         key = A[currentIndex]
@@ -12,7 +11,6 @@ def InsertionSort(A,start,end):
         A[comparisonIndex+1] = key
 
 def FirstElement(A,start,end):
-    print("F")
     if len(A) <= 0:
         print("Empty array.")
         return None
@@ -22,7 +20,6 @@ def FirstElement(A,start,end):
     return A[start]
 
 def LastElement(A,start,end):
-    print("L")
     if len(A) <= 0:
         print("Empty array.")
         return None
@@ -32,13 +29,11 @@ def LastElement(A,start,end):
     return A[end-1]
 
 def RandomElement(A,start,end):
-    print("R")
     randomElementIndex = random.randrange(start,end)
     A[randomElementIndex],A[end-1]=A[end-1],A[randomElementIndex]
     return A[end-1]
 
 def MedianElement(A,start,end):
-    print("M")
     if len(A) <= 0:
         print("Empty array.")
         return None
@@ -52,7 +47,6 @@ def MedianElement(A,start,end):
     return A[medianCandidates[1]]
 
 def CLRSPartition(A,start,end,choosePivot=LastElement):
-    print("?")
     if choosePivot == FirstElement:
         choosePivot = LastElement
     pivot = choosePivot(A,start,end+1)
@@ -66,7 +60,6 @@ def CLRSPartition(A,start,end,choosePivot=LastElement):
     return boundaryIndex+1
 
 def HoarePartition(A,start,end,choosePivot=FirstElement):
-    print("!")
     pivot = FirstElement(A,start,end+1)
     leftCurrentIndex = start - 1
     rightCurrentIndex = end + 1
@@ -79,10 +72,11 @@ def HoarePartition(A,start,end,choosePivot=FirstElement):
             leftCurrentIndex += 1
             if A[leftCurrentIndex] >= pivot:
                 break
+
         if leftCurrentIndex < rightCurrentIndex:
             A[leftCurrentIndex],A[rightCurrentIndex] = A[rightCurrentIndex],A[leftCurrentIndex]
         else:
-            return rightCurrentIndex
+            return rightCurrentIndex + 1
 
 
 def QuickSortRoutine(A,start,end,partition=CLRSPartition,choosePivot=LastElement,insertionSortLastKElements=0):
@@ -97,6 +91,8 @@ def QuickSortRoutine(A,start,end,partition=CLRSPartition,choosePivot=LastElement
 def QuickSort(A,partition=CLRSPartition,choosePivot=LastElement,insertionSortLastKElements=0):
     QuickSortRoutine(A,0,len(A)-1,partition=partition,choosePivot=choosePivot,insertionSortLastKElements=insertionSortLastKElements)
 
-A = [5,2,10,7,4,1,9,6,8,3]
-QuickSort(A,partition=HoarePartition,choosePivot=RandomElement,insertionSortLastKElements=3)
+A = [5,2,10,7,4,1,9,6,8,3,9,2,5,4,4,4,4,4,10,7,0,1]
+B = [2,1,3,1,1,1,3,]
+C = [1,1,1,1,3,2,3]
+QuickSort(A,partition=CLRSPartition,choosePivot=RandomElement,insertionSortLastKElements=0)
 print(A)
