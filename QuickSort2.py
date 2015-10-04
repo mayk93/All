@@ -1,4 +1,15 @@
 import random
+import copy
+
+def InsertionSort(A):
+    for (currentIndex,element) in enumerate(A[1:]):
+        currentIndex += 1
+        key = copy.deepcopy(A[currentIndex])
+        comparisonIndex = currentIndex - 1
+        while comparisonIndex >= 0 and A[comparisonIndex] > key:
+            A[comparisonIndex+1] = A[comparisonIndex]
+            comparisonIndex -= 1
+        A[comparisonIndex+1] = key
 
 def LastElement(A):
     if len(A) <= 0:
@@ -22,15 +33,18 @@ def Partition(A,start,end,choosePivot=LastElement):
     A[boundaryIndex+1],A[end] = A[end],A[boundaryIndex+1]
     return boundaryIndex+1
 
-def QuickSortRoutine(A,start,end,choosePivot=LastElement):
+def QuickSortRoutine(A,start,end,choosePivot=LastElement,insertionSortLastKElements=0):
     if start < end:
+        if len(A[start:end+1]) <= insertionSortLastKElements:
+            InsertionSort(A[start:end+1])
+            return
         pivotIndex = Partition(A,start,end)
         QuickSortRoutine(A,start,pivotIndex-1)
         QuickSortRoutine(A,pivotIndex+1,end)
 
-def QuickSort(A,choosePivot=LastElement):
+def QuickSort(A,choosePivot=LastElement,insertionSortLastKElements=0):
     QuickSortRoutine(A,0,len(A)-1)
 
 A = [5,2,10,7,4,1,9,6,8,3]
-QuickSort(A,choosePivot=RandomElement)
+QuickSort(A,choosePivot=RandomElement,insertionSortLastKElements=3)
 print(A)
