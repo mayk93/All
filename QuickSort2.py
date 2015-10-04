@@ -1,10 +1,9 @@
 import random
-import copy
 
 def InsertionSort(A):
     for (currentIndex,element) in enumerate(A[1:]):
         currentIndex += 1
-        key = copy.deepcopy(A[currentIndex])
+        key = A[currentIndex]
         comparisonIndex = currentIndex - 1
         while comparisonIndex >= 0 and A[comparisonIndex] > key:
             A[comparisonIndex+1] = A[comparisonIndex]
@@ -21,6 +20,11 @@ def RandomElement(A):
     randomElementIndex = random.randrange(0,len(A))
     A[randomElementIndex],A[len(A)-1]=A[len(A)-1],A[randomElementIndex]
     return A[len(A)-1]
+
+def MedianElement(A):
+    medianCandidates = random.sample(range(len(A)), 3)
+    InsertionSort(medianCandidates)
+    return A[medianCandidates[1]]
 
 def Partition(A,start,end,choosePivot=LastElement):
     pivot = choosePivot(A[start:end+1])
@@ -46,5 +50,6 @@ def QuickSort(A,choosePivot=LastElement,insertionSortLastKElements=0):
     QuickSortRoutine(A,0,len(A)-1)
 
 A = [5,2,10,7,4,1,9,6,8,3]
-QuickSort(A,choosePivot=RandomElement,insertionSortLastKElements=3)
+MedianElement(A)
+QuickSort(A,choosePivot=MedianElement,insertionSortLastKElements=3)
 print(A)
