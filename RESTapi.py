@@ -21,13 +21,9 @@ instagramURL = "https://api.instagram.com/v1/media/search?lat="+str(latitude)+"&
 instagramResult = urllib.request.urlopen(instagramURL).read()
 instagramJSON = json.loads(instagramResult.decode('utf-8'))
 
-root = tk.Tk()
-
 if len(instagramJSON.keys()) > 0:
     for image in instagramJSON['data']:
-        imageData = image['images']
-        imageType = imageData['low_resolution']
-        imageURL = imageType['url']
-
-response = requests.get(url)
-img = Image.open(BytesIO(response.content))
+        pass
+        '''
+        Re add processing.
+        '''
