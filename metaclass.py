@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
 
 class MyBaseClass:
-    x = 150
+    x = 170
     def baseFunction(self,lst,index):
         try:
             print(lst[index])
@@ -17,7 +17,7 @@ print(x.x+5)
 print(y.x+5)
 print(y.y+5)
 
-# Should be 155 155 105
+# Should be 175 175 105
 
 x.baseFunction([1,2,3],0)
 y.baseFunction([4,5,6],1)
