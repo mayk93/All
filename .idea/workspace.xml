@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="82ff6671-013f-4af3-92b3-36524b8edd93" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Old/New/Content/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test0.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_read.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_write.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/New/Content/bootstrap.min.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/0.png" afterPath="$PROJECT_DIR$/Old/0.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/AddBinaryTest.py" afterPath="$PROJECT_DIR$/Old/AddBinaryTest.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest.sln" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest.sln" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest.v12.suo" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest.v12.suo" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/BDAppTest.csproj" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/BDAppTest.csproj" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/BDAppTest.csproj.user" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/BDAppTest.csproj.user" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Properties/AssemblyInfo.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Properties/AssemblyInfo.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Site1.Master" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Site1.Master" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Site1.Master.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Site1.Master.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Site1.Master.designer.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Site1.Master.designer.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/StyleSheet1.css" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/StyleSheet1.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Web.Debug.config" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Web.Debug.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Web.Release.config" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Web.Release.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/Web.config" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/Web.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/WebForm1.aspx" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/WebForm1.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/WebForm1.aspx.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/WebForm1.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/WebForm1.aspx.designer.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/WebForm1.aspx.designer.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/BDAppTest.dll" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/BDAppTest.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/BDAppTest.dll.config" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/BDAppTest.dll.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/BDAppTest.pdb" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/BDAppTest.pdb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/MongoDB.Bson.dll" afterPath="$PROJECT_DIR$/Old/New/Bin/MongoDB.Bson.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/MongoDB.Bson.xml" afterPath="$PROJECT_DIR$/Old/New/Bin/MongoDB.Bson.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/MongoDB.Driver.dll" afterPath="$PROJECT_DIR$/Old/New/Bin/MongoDB.Driver.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/bin/MongoDB.Driver.xml" afterPath="$PROJECT_DIR$/Old/New/Bin/MongoDB.Driver.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/BDAppTest.csproj.FileListAbsolute.txt" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/BDAppTest.csproj.FileListAbsolute.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/BDAppTest.csprojResolveAssemblyReference.cache" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/BDAppTest.csprojResolveAssemblyReference.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/BDAppTest.dll" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/BDAppTest.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/BDAppTest.pdb" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/BDAppTest.pdb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/BDAppTest/packages.config" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/packages.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/mongocsharpdriver.1.9.2/License.rtf" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/mongocsharpdriver.1.9.2/License.rtf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Bson.XML" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Bson.XML" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Bson.dll" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Bson.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Driver.XML" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Driver.XML" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Driver.dll" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/mongocsharpdriver.1.9.2/lib/net35/MongoDB.Driver.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/mongocsharpdriver.1.9.2/mongocsharpdriver.1.9.2.nupkg" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/mongocsharpdriver.1.9.2/mongocsharpdriver.1.9.2.nupkg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/BDAppTest/packages/repositories.config" afterPath="$PROJECT_DIR$/Old/BDAppTest/packages/repositories.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DivideAndConquerLinearSubarray.py" afterPath="$PROJECT_DIR$/Old/DivideAndConquerLinearSubarray.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/DivideAndConquerMaxSubarray.py" afterPath="$PROJECT_DIR$/Old/DivideAndConquerMaxSubarray.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FisierDecriptat.txt" afterPath="$PROJECT_DIR$/Old/FisierDecriptat.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FisierEncriptat.txt" afterPath="$PROJECT_DIR$/Old/FisierEncriptat.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FunnzyIntervalSorting.py" afterPath="$PROJECT_DIR$/Old/FunnzyIntervalSorting.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/FuzzyIntervalSortingC.c" afterPath="$PROJECT_DIR$/Old/FuzzyIntervalSortingC.c" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/HeapSort.py" afterPath="$PROJECT_DIR$/Old/HeapSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Bin/MongoDB.Bson.dll" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/MongoDB.Bson.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Bin/MongoDB.Bson.dll.refresh" afterPath="$PROJECT_DIR$/Old/New/Bin/MongoDB.Bson.dll.refresh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Bin/MongoDB.Bson.xml" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/MongoDB.Bson.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Bin/MongoDB.Driver.dll" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/MongoDB.Driver.dll" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Bin/MongoDB.Driver.dll.refresh" afterPath="$PROJECT_DIR$/Old/New/Bin/MongoDB.Driver.dll.refresh" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Bin/MongoDB.Driver.xml" afterPath="$PROJECT_DIR$/Old/BDAppTest/BDAppTest/bin/MongoDB.Driver.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Content/bootstrap-theme.css" afterPath="$PROJECT_DIR$/Old/New/Content/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Content/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/Old/New/Content/bootstrap-theme.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Content/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/Old/New/Content/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Content/bootstrap.css" afterPath="$PROJECT_DIR$/Old/New/Content/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Content/bootstrap.css.map" afterPath="$PROJECT_DIR$/Old/New/Content/bootstrap.css.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Daw-Web-Site-05-01-2015/.gitattributes" afterPath="$PROJECT_DIR$/Old/New/Daw-Web-Site-05-01-2015/.gitattributes" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Daw-Web-Site-05-01-2015/.gitignore" afterPath="$PROJECT_DIR$/Old/New/Daw-Web-Site-05-01-2015/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Global.asax" afterPath="$PROJECT_DIR$/Old/New/Global.asax" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/bootstrap.js" afterPath="$PROJECT_DIR$/Old/New/Scripts/bootstrap.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/bootstrap.min.js" afterPath="$PROJECT_DIR$/Old/New/Scripts/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/jquery-2.1.3.intellisense.js" afterPath="$PROJECT_DIR$/Old/New/Scripts/jquery-2.1.3.intellisense.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/jquery-2.1.3.js" afterPath="$PROJECT_DIR$/Old/New/Scripts/jquery-2.1.3.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/jquery-2.1.3.min.js" afterPath="$PROJECT_DIR$/Old/New/Scripts/jquery-2.1.3.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/jquery-2.1.3.min.map" afterPath="$PROJECT_DIR$/Old/New/Scripts/jquery-2.1.3.min.map" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Scripts/npm.js" afterPath="$PROJECT_DIR$/Old/New/Scripts/npm.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Web.Debug.config" afterPath="$PROJECT_DIR$/Old/New/Web.Debug.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/Web.config" afterPath="$PROJECT_DIR$/Old/New/Web.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/art.aspx" afterPath="$PROJECT_DIR$/Old/New/art.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/art.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/art.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/article.aspx" afterPath="$PROJECT_DIR$/Old/New/article.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/article.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/article.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/edit.aspx" afterPath="$PROJECT_DIR$/Old/New/edit.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/edit.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/edit.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Old/New/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Old/New/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Old/New/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Old/New/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/history.aspx" afterPath="$PROJECT_DIR$/Old/New/history.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/history.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/history.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/login.aspx" afterPath="$PROJECT_DIR$/Old/New/login.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/login.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/login.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/main.aspx" afterPath="$PROJECT_DIR$/Old/New/main.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/main.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/main.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/packages.config" afterPath="$PROJECT_DIR$/Old/New/packages.config" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/register.aspx" afterPath="$PROJECT_DIR$/Old/New/register.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/register.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/register.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/science.aspx" afterPath="$PROJECT_DIR$/Old/New/science.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/science.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/science.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/search.aspx" afterPath="$PROJECT_DIR$/Old/New/search.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/search.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/search.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/upload.aspx" afterPath="$PROJECT_DIR$/Old/New/upload.aspx" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/New/upload.aspx.cs" afterPath="$PROJECT_DIR$/Old/New/upload.aspx.cs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Output.txt" afterPath="$PROJECT_DIR$/Old/Output.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/QuickSort.py" afterPath="$PROJECT_DIR$/Old/QuickSort.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/QuickSort2.py" afterPath="$PROJECT_DIR$/Old/QuickSort2.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/READ_THIS.txt" afterPath="$PROJECT_DIR$/Old/READ_THIS.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/RESTapi.py" afterPath="$PROJECT_DIR$/Old/RESTapi.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/SelectionProblems.py" afterPath="$PROJECT_DIR$/Old/SelectionProblems.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/challange0.py" afterPath="$PROJECT_DIR$/Old/challange0.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/enc.ico" afterPath="$PROJECT_DIR$/Old/enc.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/enc0.ico" afterPath="$PROJECT_DIR$/Old/enc0.ico" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/encFull.py" afterPath="$PROJECT_DIR$/Old/encFull.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/encoder.py" afterPath="$PROJECT_DIR$/Old/encoder.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/metaclass.py" afterPath="$PROJECT_DIR$/Old/metaclass.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rank.py" afterPath="$PROJECT_DIR$/Old/rank.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/rodCuttingDP.py" afterPath="$PROJECT_DIR$/Old/rodCuttingDP.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/Old/test.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/workingRank.py" afterPath="$PROJECT_DIR$/Old/workingRank.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/x.txt" afterPath="$PROJECT_DIR$/Old/x.txt" />
+    </list>
+    <ignored path="All---Unorganized.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/All---Unorganized$test0.coverage" NAME="test0 Coverage Results" MODIFIED="1476179524180" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+    <SUITE FILE_PATH="coverage/All---Unorganized$test1.coverage" NAME="test1 Coverage Results" MODIFIED="1476180434759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+    <SUITE FILE_PATH="coverage/All---Unorganized$test2_read.coverage" NAME="test2_read Coverage Results" MODIFIED="1476180462142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+    <SUITE FILE_PATH="coverage/All---Unorganized$test2_write.coverage" NAME="test2_write Coverage Results" MODIFIED="1476182422828" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="All---Unorganized" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="test0.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2_read.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_read.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+              <folding>
+                <element signature="e#801#810#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test2_write.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_write.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test0.py" />
+        <option value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test1.py" />
+        <option value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_write.py" />
+        <option value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_read.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1920" />
+    <option name="height" value="1200" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="All---Unorganized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="All---Unorganized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="All---Unorganized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="All---Unorganized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="All---Unorganized" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PythonTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Python3Tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AsyncTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FullScreen" value="true" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Old" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.test2_write">
+    <configuration default="false" name="test0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test0.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test2_read" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_read.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test2_write" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_write.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <module name="All---Unorganized" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="All---Unorganized" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Python.test0" />
+      <item index="1" class="java.lang.String" itemvalue="Python.test1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.test2_read" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test2_write" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.test2_write" />
+        <item index="1" class="java.lang.String" itemvalue="Python.test2_read" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test0" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="82ff6671-013f-4af3-92b3-36524b8edd93" name="Default" comment="" />
+      <created>1476178891891</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1476178891891</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1920" height="1200" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957503" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="12" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_write.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PythonTests/Python3Tests/AsyncTests/test2_read.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+          <folding>
+            <element signature="e#801#810#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
