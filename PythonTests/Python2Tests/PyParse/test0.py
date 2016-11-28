@@ -9,6 +9,7 @@ SAMPLE = '''
 '''
 SAMPLE = SAMPLE.strip()
 
+
 class Parser(object):
     def __init__(self):
         ints = Word(nums)
