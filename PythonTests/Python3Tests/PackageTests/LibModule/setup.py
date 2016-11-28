@@ -1,10 +1,9 @@
 # Actual setup tools
 from setuptools import setup, find_packages
 
-import codecs
 import os
 
-here = path.abspath(path.dirname(__file__))
+here = os.path.abspath(path.dirname(__file__))
 
 setup(
     name='LibModule',
