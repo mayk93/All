@@ -21,4 +21,5 @@ class LibMacls(object):
         self.value = old_value
 
     def __str__(self):
+        #  Return statement
         return " -> Current value is: %s" % self.value
