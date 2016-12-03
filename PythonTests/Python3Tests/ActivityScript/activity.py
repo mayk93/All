@@ -1,3 +1,5 @@
+import os
+import json
 import optparse
 import subprocess
 import datetime
@@ -5,7 +7,33 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 
+def last(path):
+    return path.split("/")[len(path.split("/")) - 1]
+
+
+def up_to_git(path):
+    '''
+
+    Go up until the current directory contains "git" in the name
+
+    :param path: A path, most likely the path of the current file
+    :return:
+    '''
+
+    while not "git" in last(path).lower():
+        path = "/".join(path.split("/")[:-1])
+
+    return path
+
+
 DAY = 60*60*24
+try:
+    with open("activity.cfg", "r") as config_file:
+        config = json.loads(config_file.read())
+        BASE_REPO_DIR = config.get("base_repo_dir", up_to_git(os.path.realpath(__file__)))
+except FileNotFoundError:
+    BASE_REPO_DIR = up_to_git(os.path.realpath(__file__))
+logging.info("BASE_REPO_DIR: " + BASE_REPO_DIR)
 
 
 def generate_activity(begin, end, repo=None):
@@ -75,10 +103,12 @@ if __name__ == '__main__':
         begin, end = end, begin
 
     if options.repo:
-        logging.info("Working on repo: ", options.repo)
+        repo_path = os.path.join(BASE_REPO_DIR, options.repo)
+        logging.info("Working on repo: " + repo_path)
     else:
-        logging.info("Working on all repos.")
+        repo_path = BASE_REPO_DIR
+        logging.info("Working on all repos: " + BASE_REPO_DIR)
     logging.info("Beginning from: " + str(begin))
     logging.info("Ending at: " + str(end))
 
-    generate_activity(begin, end, repo=options.repo)
+    generate_activity(begin, end, repo=repo_path)
