@@ -52,9 +52,9 @@ if __name__ == '__main__':
             begin = roundTime(datetime.datetime.now(), roundTo=DAY) - datetime.timedelta(days=no_days)
         except:
             logging.exception(e)
-            begin = roundTime(datetime.datetime.now(), roundTo=)
+            begin = roundTime(datetime.datetime.now(), roundTo=DAY)
     else:
-        pass
+        begin = roundTime(datetime.datetime.now(), roundTo=DAY)
     if options.end:
         try:
             pass
