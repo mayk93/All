@@ -132,8 +132,8 @@ if __name__ == '__main__':
         logging.info("Working on repo: " + repo_path)
     else:
         repo_path = BASE_REPO_DIR
-        logging.info(" -> Working on all repos: " + BASE_REPO_DIR)
-    logging.info(" -> Beginning from: " + str(begin))
-    logging.info(" -> Ending at: " + str(end))
+        logging.info("-> Working on all repos: " + BASE_REPO_DIR)
+    logging.info("-> Beginning from: " + str(begin))
+    logging.info("-> Ending at: " + str(end))
 
     generate_activity(begin, end, repo_path)
