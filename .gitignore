@@ -47,3 +47,4 @@ Temporary Items
 *.pyc
 password.txt
 db.sqlite3
+migrations/
